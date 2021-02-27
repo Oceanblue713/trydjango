@@ -3,8 +3,11 @@
 {% block content %}
 
   <h1>About</h1>
+  <h3>{{ title|capfirst|title|slugify }}</h3>
 
-  <p>{{ my_text }}, {{ my_number }}</p>
+  {{ my_html|safe }}
+
+  <p>{{ my_number }}</p>
   <p>{{ my_list }}</p>
 
   <ul>
