@@ -29,7 +29,7 @@ class ProductForm(forms.ModelForm):
     if not "CFE" in title:
       raise forms.ValidationError("This is not valid title")
     if not "news" in title:
-      raise forms.ValidationError("This is not valid title")
+      raise forms.ValidationError("This is not a valid title")
     else: 
       return title
 
